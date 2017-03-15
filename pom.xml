@@ -32,6 +32,15 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+
+			<!-- Spring Executable jar:
+				To create an executable jar we need to add the spring-boot-maven-plugin.
+				The spring-boot-starter-parent POM includes <executions> configuration to bind the repackage goal.
+			-->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
 		</plugins>
 	</build>
 
